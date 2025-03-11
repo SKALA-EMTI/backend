@@ -1,0 +1,74 @@
+name: 기능 개발 요청
+description: 새로운 기능 개발을 위한 이슈 템플릿
+title: "[Feature]: "
+labels: ["enhancement"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: "## 기능 개발 요청서"
+  
+  - type: textarea
+    id: overview
+    attributes:
+      label: 개요
+      description: 개발할 기능에 대한 간략한 설명
+      placeholder: 소셜 로그인(구글, 카카오) 기능 구현
+    validations:
+      required: true
+  
+  - type: textarea
+    id: purpose
+    attributes:
+      label: 목적
+      description: 이 기능이 필요한 이유
+      placeholder: 사용자 편의성 증대 및 회원가입 과정 간소화를 위함
+    validations:
+      required: true
+  
+  - type: textarea
+    id: requirements
+    attributes:
+      label: 기술적 요구사항
+      description: 구현에 필요한 기술 스택, 라이브러리, API 등
+      value: "- \n- \n- "
+    validations:
+      required: false
+  
+  - type: textarea
+    id: details
+    attributes:
+      label: 세부 구현 사항
+      description: 구현해야 할 세부 기능 목록
+      value: "- [ ] \n- [ ] \n- [ ] "
+    validations:
+      required: true
+  
+  - type: input
+    id: deadline
+    attributes:
+      label: 예상 완료 기한
+      placeholder: 2025년 4월 1일
+    validations:
+      required: false
+  
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 우선순위
+      options:
+        - 높음
+        - 중간
+        - 낮음
+      default: 1
+    validations:
+      required: true
+  
+  - type: textarea
+    id: references
+    attributes:
+      label: 참고 자료
+      description: 관련 문서, 디자인, API 문서 등의 링크
+    validations:
+      required: false
