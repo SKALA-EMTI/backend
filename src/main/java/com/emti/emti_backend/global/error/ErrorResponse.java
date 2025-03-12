@@ -1,6 +1,5 @@
 package com.emti.emti_backend.global.error;
 
-import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.springframework.validation.BindingResult;
@@ -8,9 +7,11 @@ import org.springframework.validation.BindingResult;
 import java.util.ArrayList;
 import java.util.List;
 
+import static lombok.AccessLevel.PROTECTED;
+
 
 @Getter
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@NoArgsConstructor(access = PROTECTED)
 public class ErrorResponse {
 
     private String message;
@@ -19,7 +20,7 @@ public class ErrorResponse {
     private List<FieldError> errors;
 
     @Getter
-    @NoArgsConstructor(access = AccessLevel.PROTECTED)
+    @NoArgsConstructor(access = PROTECTED)
     public static class FieldError {
         private String field;
         private String value;
