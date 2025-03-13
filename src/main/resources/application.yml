@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: emti_backend
+
+  config:
+    import: optional:file:.env[.properties]
+
+  # TODO: datasuorce 설정
+
+  # TODO: jpa 설정
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
